@@ -11,6 +11,7 @@
   "dependencies": {
     "compute-rhino3d": "^0.13.0-beta",
     "pinia": "^2.1.7",
+    "primevue": "^3.51.0",
     "three": "^0.160.0",
     "vite-plugin-wasm": "^3.3.0",
     "vue": "^3.3.11"

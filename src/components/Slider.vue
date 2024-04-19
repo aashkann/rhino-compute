@@ -1,4 +1,6 @@
 <script setup>
+import Slider from 'primevue/slider';
+
 import { ref } from "vue";
 // Define properties that you will be able to access from parent component. 
 // Those properties will be binded from parent to child. 
@@ -24,14 +26,14 @@ function emitValueUpdate()
 <div>
 	<form class="definition-input">
     <label class="input-title" for="range-slider">{{ title }}: {{ sliderValue }}</label>
-
-    <input type="range" class="modern-range"
+    <Slider type="range" class="modern-range"
       :min="min" 
       :max="max" 
       :step="step"
       v-model="sliderValue" 
       @mouseup="emitValueUpdate"
     />
+
       
 	</form>
 </div>
